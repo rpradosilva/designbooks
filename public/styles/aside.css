@@ -1,0 +1,77 @@
+.aside__title-count {
+  color: var(--gray2);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.aside__desc {
+  color: var(--gray2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  margin: 16px 0 32px 0;
+}
+
+.aside__profile {
+  margin: 0 0 48px 0;
+}
+
+.aside__profile {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.aside__profile-name {
+  color: var(--orange);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin: 0 0 0 16px;
+  text-decoration: underline;
+}
+
+.aside__menu {
+  margin: 0 0 48px 0;
+}
+
+.aside__menu-desc {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0 0 16px 0;
+}
+
+.aside__menu-nav {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+}
+
+.aside__menu-link {
+  color: var(--gray2);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 24px 0;
+}
+
+.aside__menu-active {
+  color: var(--orange);
+}
+
+.aside__sharelink {
+  background: var(--gray1);
+  border-radius: 4px;
+  color: var(--gray3);
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+}
+
+.aside__sharelink a {
+  color: var(--white);
+}
