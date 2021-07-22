@@ -4,7 +4,7 @@
 }
 @media only screen and (max-width: 768px) {
   .aside__menu-mobile {
-    margin: 24px 0 0 0;
+    margin: 24px 0 -24px 0;
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -127,7 +127,17 @@
 
   .aside__menu-mobile-fixed {
     position: fixed;
-    bottom: 0;
+    bottom: 24px;
     left: 0;
+    height: 64px;
+  }
+
+  .aside__menu-mobile-fixed:before,
+  .aside__menu-mobile-fixed:after {
+    top: 24px;
+  }
+
+  .aside__menu-mobile-fixed .aside__menu-select {
+    height: 64px;
   }
 }

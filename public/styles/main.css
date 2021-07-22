@@ -4,6 +4,8 @@
 @import "aside.css";
 @import "content.css";
 @import "dropdown.css";
+@import "modal.css";
+@import "share.css";
 :root {
   --black: #111111;
   --white: #ffffff;

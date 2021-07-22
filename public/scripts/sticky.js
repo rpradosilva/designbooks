@@ -2,8 +2,8 @@ window.onscroll = function () {
   fixedMenu();
 };
 
-var dropdown = document.querySelector(".aside__menu-mobile");
-var fixed = dropdown.offsetTop;
+const dropdown = document.querySelector(".aside__menu-mobile");
+const fixed = dropdown.offsetTop;
 
 function fixedMenu() {
   if (window.pageYOffset > fixed) {

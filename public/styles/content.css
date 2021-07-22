@@ -27,7 +27,13 @@
   gap: 24px;
   row-gap: 32px;
   max-height: 640px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.content__list::-webkit-scrollbar {
+  display: none;
 }
 
 .content__list-item {
@@ -63,10 +69,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .content__title,
-  .content__desc {
+  .content__title {
     display: none;
     overflow: hidden;
+  }
+  .content__desc {
+    font-size: 13px;
+    line-height: 150%;
+    margin: 0 0 32px 0;
+    padding: 16px 24px;
   }
   .content__list {
     display: grid;
@@ -74,5 +85,6 @@
     gap: 24px;
     row-gap: 32px;
     max-height: 100%;
+    margin: 0 0 64px 0;
   }
 }
