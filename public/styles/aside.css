@@ -1,3 +1,11 @@
+.aside__title {
+  font-style: bold;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -3%;
+}
+
 .aside__title-count {
   color: var(--gray2);
   font-size: 12px;
@@ -15,9 +23,6 @@
 
 .aside__profile {
   margin: 0 0 48px 0;
-}
-
-.aside__profile {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -68,10 +73,73 @@
   padding: 16px 24px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 150%;
   letter-spacing: -0.03em;
 }
 
 .aside__sharelink a {
   color: var(--white);
+}
+
+@media only screen and (max-width: 1270px) {
+  .aside__title-count {
+    display: block;
+    margin: 16px 0;
+  }
+  .aside__sharelink {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .aside__title {
+    font-size: 40px;
+    line-height: 130%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .aside__title {
+    font-size: 28px;
+    line-height: 130%;
+  }
+
+  .aside__sharelink {
+    font-size: 13px;
+    line-height: 150%;
+  }
+  .aside__profile-name {
+    font-size: 13px;
+    line-height: 150%;
+  }
+  .aside__menu-nav {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aside__title {
+    width: 100%;
+    font-size: 24px;
+  }
+  .aside__desc {
+    margin: 8px 0 0 0;
+  }
+  .aside__title-count {
+    display: inline;
+    margin: 0 8px;
+  }
+  .aside__profile {
+    margin: 16px 0 0 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .aside__menu-desc,
+  .aside__menu-nav,
+  .aside__sharelink {
+    display: none;
+    overflow: hidden;
+  }
 }
