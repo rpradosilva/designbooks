@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Happy Jekylling!"
+layout: designlivros
+title: "Livros de design"
 ---
 
 ## You're ready to go!
