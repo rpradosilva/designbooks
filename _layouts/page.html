@@ -1,0 +1,113 @@
+---
+layout: default
+---
+<aside>
+    <div class="aside__header">
+        <h2 class="aside__title">Livros que todo designer deve comprar <span class="aside__title-count"><i
+                    class="fas fa-book"></i> {{ site.posts.size }} livros</span></h2>
+        <p class="aside__desc">Curadoria de livros de design disponíveis na Amazon. Invista no seu
+            conhecimento!
+        </p>
+    </div>
+    <div class="aside__profile">
+        <img src="/assets/images/photo.png" alt="Image profile">
+        <a href="#" class="aside__profile-link">
+            <p class="aside__profile-name">Por @willianmatiola</p>
+        </a>
+    </div>
+
+    <div class="aside__menu">
+        <p class="aside__menu-desc"><strong>Temas</strong></p>
+        <nav class="aside__menu-nav">
+            <ul class="aside__menu-list">
+                <!-- aside__menu-active -->
+                <ul>
+                    {% assign categories_list = site.categories %}
+                    {% if categories_list.first[0] == null %}
+                    {% for category in categories_list %}
+
+                    <a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}"
+                        class="aside__menu-link">
+                        <li class="aside__menu-item">{{ category | camelcase }}</li>
+                        <span class="aside__menu-itemcount">{{ site.tags[category].size }}</span>
+                    </a>
+                    {% endfor %}
+                    {% else %}
+                    {% for category in categories_list %}
+                    <a href="#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"
+                        class="aside__menu-link">
+                        <li class="aside__menu-item">{{ category[0] | camelcase }}</li>
+                        <span class="aside__menu-itemcount">{{ category[1].size }}</span>
+                    </a>
+                    {% endfor %}
+                    {% endif %}
+                    {% assign categories_list = nil %}
+                </ul>
+            </ul>
+        </nav>
+
+        <ul>
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+            {% for category in categories_list %}
+            <li><a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category |
+                    camelcase }} ({{ site.tags[category].size }})</a></li>
+            {% endfor %}
+            {% else %}
+            {% for category in categories_list %}
+            <li><a href="#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] |
+                    camelcase
+                    }} ({{ category[1].size }})</a></li>
+            {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+        </ul>
+
+        {% for category in site.categories %}
+        <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}
+        </h3>
+        <ul>
+            {% assign pages_list = category[1] %}
+            {% for post in pages_list %}
+            {% if post.title != null %}
+            {% if group == null or group == post.group %}
+            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <time
+                        datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B
+                        %d, %Y" }}</time></a></li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
+        </ul>
+        {% endfor %}
+
+
+
+
+
+
+
+
+        <div class="aside__menu-mobile">
+            <select class="aside__menu-select">
+                <option value="">Selecione um tema…</option>
+                <option value="1">Option #1</option>
+                <option value="2">Option #2</option>
+                <option value="3">Option #3</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="aside__sharelink">
+        <span>😍 Compartilhe esse link: <a href="http://bit.ly/designlivros">bit.ly/designlivros</a></span>
+    </div>
+    <div class="aside__sharelink-mobile">
+        <i class="fas fa-share-alt"></i>
+    </div>
+
+</aside>
+
+<section>
+    {%- include content.html -%}
+</section>

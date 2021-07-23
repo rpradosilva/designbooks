@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<script>
+    function filterUsingCategory(selectedCategory) {
+        var id = 0;
+        {% for post in site.posts %}
+        var cats = {{ post.categories | jsonify
+    }}
+    var postDiv = document.getElementById(++id);
+    postDiv.style.display = (cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
+    {% endfor %}
+}
+</script>
+
+<div>
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+    {% assign cat = category | first %}
+    <div id="{{ cat }}" onclick="filterUsingCategory(this.id)">{{ cat }}</div>
+    {% endfor %}
+</div>
+
+{% assign id = 0 %}
+{% for post in site.posts %}
+{% assign id = id | plus:1 %}
+<div class="post" id="{{id}}">
+    <p>
+        {{ post.title }}
+    </p>
+</div>
+{% endfor %}
