@@ -1,0 +1,25 @@
+.aside__sharelink-mobile {
+  display: none;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .aside__sharelink-mobile {
+    background: var(--gray3);
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 80%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .aside__sharelink-mobile i {
+    color: var(--white);
+    padding: 16px 16px;
+    font-size: 16px;
+  }
+}
