@@ -41,6 +41,11 @@
   flex-direction: column;
 }
 
+.content__list-item img {
+  height: 180px;
+  object-fit: cover;
+}
+
 .content__list-item span {
   color: var(--yellow);
   font-size: 14px;

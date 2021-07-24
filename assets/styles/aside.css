@@ -119,6 +119,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .aside__menu {
+    margin: 0;
+  }
   .aside__title {
     width: 100%;
     font-size: 24px;
@@ -137,9 +140,25 @@
     flex-direction: row;
   }
   .aside__menu-desc,
-  .aside__menu-nav,
   .aside__sharelink {
     display: none;
     overflow: hidden;
+  }
+
+  .aside__menu-nav {
+    margin: 32px 0;
+  }
+
+  .aside__menu-link {
+    background: var(--gray1);
+    margin: 0 0 8px 0;
+    padding: 16px;
+  }
+
+  .aside__menu-active {
+    color: var(--white);
+    border: 2px solid var(--orange);
+    border-radius: 4px;
+    font-weight: 700;
   }
 }
