@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " pt-br" }}">
+
+{%- include head.html -%}
+
+<body>
+
+    <div class="wrapper">
+        {{ content }}
+        {%- include modal.html -%}
+
+    </div>
+
+    {%- include scripts.html -%}
+
+</body>
+
+</html>

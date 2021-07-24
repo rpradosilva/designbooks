@@ -1,0 +1,19 @@
+<h1 class="content__title">XXXXX</h1>
+<a href="#" class="content__desc-link">
+    <p class="content__desc">Clique aqui e sugira um livro enviando uma DM pra mim</p>
+</a>
+<ul class="content__list">
+
+    {%- for post in site.posts -%}
+
+    <a href="{{ post.buy }}" class="content__list-link" target="_blank">
+        <li class="content__list-item">
+            <img src="{{ post.image }}" alt="{{ post.title }}" class="content__list-image">
+            <span>Comprar</span>
+        </li>
+    </a>
+
+    {%- endfor -%}
+
+
+</ul>
