@@ -86,7 +86,6 @@
   }
   .content__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 130px);
     gap: 24px;
     row-gap: 32px;
     max-height: 100%;
