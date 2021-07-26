@@ -1,6 +1,6 @@
 ---
 title: "Brand Gap"
 image: https://m.media-amazon.com/images/I/41ahrI0iEiL.jpg
-categories: Branding
+categories: [Branding]
 buy: https://amzn.to/2U8KpBu
 ---

@@ -1,0 +1,6 @@
+---
+title: "Nudge2"
+image: https://images-na.ssl-images-amazon.com/images/I/41U7FQIsplL._SX324_BO1,204,203,200_.jpg
+categories: [Economia Comportamental]
+buy: https://amzn.to/2UagSHF
+---

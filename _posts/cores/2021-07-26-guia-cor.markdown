@@ -1,6 +1,6 @@
 ---
 title: "Guia completo da cor"
 image: https://images-na.ssl-images-amazon.com/images/I/518Yir566YL._SX454_BO1,204,203,200_.jpg
-categories: Cores
+categories: [Cores]
 buy: https://amzn.to/2UbUAoM
 ---

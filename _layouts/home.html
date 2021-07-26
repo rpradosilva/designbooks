@@ -61,7 +61,11 @@ layout: default
                 {% assign cat = category | first %}
                 <a id="{{ cat }}" onclick="filterUsingCategory(this.id)" class="aside__menu-link">
                     <li class="aside__menu-item">{{ cat }}</li>
-                    <span class="aside__menu-itemcount">{{ category[1].size }}</span>
+
+                    {% if category[1].size < 10 %} <span class="aside__menu-itemcount">0{{ category[1].size }}</span>
+                        {% elsif category[1].size >= 10 %}
+                        <span class="aside__menu-itemcount">{{ category[1].size }}</span>
+                        {% endif %}
                 </a>
                 {% endfor %}
             </ul>
