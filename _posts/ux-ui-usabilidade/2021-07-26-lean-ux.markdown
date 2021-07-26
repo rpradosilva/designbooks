@@ -1,0 +1,6 @@
+---
+title: "Lean UX: Designing Great Products with Agile Teams"
+image: https://images-na.ssl-images-amazon.com/images/I/51Ye5W+M2CL._SX330_BO1,204,203,200_.jpg
+categories: [UX / UI / Usabilidade]
+buy: https://amzn.to/2QBEUsW
+---
