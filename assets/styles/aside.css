@@ -60,6 +60,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 0 24px 0;
+  cursor: pointer;
 }
 
 .aside__menu-active {
