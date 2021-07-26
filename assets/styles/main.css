@@ -5,6 +5,7 @@
 @import "content.css";
 @import "modal.css";
 @import "share.css";
+@import "fullpage.css";
 :root {
   --black: #111111;
   --white: #ffffff;
