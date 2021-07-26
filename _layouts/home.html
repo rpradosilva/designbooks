@@ -8,15 +8,20 @@ layout: default
 
         var itemSelected = document.getElementById(selectedCategory)
         var allItems = document.querySelectorAll(".aside__menu-list a")
+        var navMobItem = document.querySelector(".aside__menu-filter p")
+        var navMobCount = document.querySelector(".aside__menu-filter span")
+        var selectTitleElem = document.querySelector(".content__title")
+        var title = itemSelected.id
+        var count = itemSelected.querySelector("span")
 
         for (const item of allItems) {
             item.classList.remove("aside__menu-active");
         }
-
+        navMobItem.innerHTML = title
+        navMobCount.innerHTML = count.textContent
         itemSelected.classList.add("aside__menu-active");
+        expandFilter()
 
-        var selectTitleElem = document.querySelector(".content__title")
-        var title = itemSelected.id
 
         if (selectTitleElem.textContent.length > 0) {
             selectTitleElem.innerHTML = ""
@@ -55,14 +60,20 @@ layout: default
     <div class="aside__menu">
         <p class="aside__menu-desc"><strong>Temas</strong></p>
         <nav class="aside__menu-nav">
+            <a onclick="expandFilter()" class="aside__menu-filter">
+                <p></p>
+                <span></span>
+            </a>
             <ul class="aside__menu-list">
+
                 {% assign categories = site.categories | sort %}
                 {% for category in categories %}
                 {% assign cat = category | first %}
                 <a id="{{ cat }}" onclick="filterUsingCategory(this.id)" class="aside__menu-link">
                     <li class="aside__menu-item">{{ cat }}</li>
 
-                    {% if category[1].size < 10 %} <span class="aside__menu-itemcount">0{{ category[1].size }}</span>
+                    {% if category[1].size < 10 %} <span class="aside__menu-itemcount">0{{ category[1].size
+                        }}</span>
                         {% elsif category[1].size >= 10 %}
                         <span class="aside__menu-itemcount">{{ category[1].size }}</span>
                         {% endif %}
