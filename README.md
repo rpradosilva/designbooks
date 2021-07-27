@@ -60,7 +60,7 @@ buy: <!-- The url to buy book -->
 
 ## Licence
 
-[Licença MIT](LICENSE)
+[Licença MIT](/LICENCE)
 
 ---
 
