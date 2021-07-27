@@ -22,7 +22,7 @@ title: Livros de design
 email: contato@rprado.design
 description: >- # this means to ignore newlines until "baseurl:"
   Livros que todo designer deve comprar
-baseurl: "/designlivros" # the subpath of your site, e.g. /blog
+baseurl: "/designbooks" # the subpath of your site, e.g. /blog
 url: "http://rpradosilva.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
