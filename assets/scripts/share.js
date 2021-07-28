@@ -2,7 +2,7 @@ const modal = document.querySelector(".modal");
 let closeModal = document.querySelector(".modal__content-close");
 
 const shareButton = document.querySelector(".aside__sharelink-mobile i");
-const shareLink = "http://bit.ly/designlivros";
+const shareLink = window.location.href;
 
 function copyToClipboard(url) {
   var fakeElement = document.createElement("textarea");
