@@ -57,6 +57,7 @@ buy: <!-- The url to buy book -->
 |     [William Matiola](https://github.com/willianmatiola)     |      [Rafael Prado](http://www.github.com/rpradosilva)       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![](https://avatars2.githubusercontent.com/u/34339670?s=100) | ![](https://avatars2.githubusercontent.com/u/22681977?s=100) |
+|                         UI Designer                          |                          Developer                           |
 
 ## Licence
 
