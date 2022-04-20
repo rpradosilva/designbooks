@@ -1,6 +1,6 @@
 ---
 title: "Sprint. O Método Usado no Google Para Testar e Aplicar Novas Ideias em Apenas Cinco Dias"
 image: https://images-na.ssl-images-amazon.com/images/I/41eeNll7e6L._SX321_BO1,204,203,200_.jpg
-categories: [Métodos / Outros]
+categories: [Métodos - Outros]
 buy: https://amzn.to/33Ek6X4
 ---

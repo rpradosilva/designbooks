@@ -35,7 +35,10 @@ To optimizing and fast developing, the project use jekyll on github pages.
 ### Install
 
 - Clone repo: `rpradosilva/designbooks`
+- Install dependences: `bundle install`
+- Update dependences: `bundle update`
 - Run local server: `bundle exec jekyll serve`
+- Open `http://127.0.0.1:4000/designbooks/`
 
 ## Contribute
 

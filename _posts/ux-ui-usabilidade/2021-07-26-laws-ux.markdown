@@ -1,6 +1,6 @@
 ---
 title: "Laws of UX: Using Psychology to Design Better Products & Services"
 image: https://images-na.ssl-images-amazon.com/images/I/410ZGx1mcUL._SX331_BO1,204,203,200_.jpg
-categories: [UX / UI / Usabilidade]
+categories: [UX - UI - Usabilidade]
 buy: https://amzn.to/2QA6aI8
 ---
