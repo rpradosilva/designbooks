@@ -68,4 +68,4 @@ buy: <!-- The url to buy book -->
 
 ---
 
-### Developed by [<img alt="Logo RPrado" src="https://raw.githubusercontent.com/rpradosilva/my-readme/main/.github/assets/images/logo-rprado.png" width="91px" />](http://rprado.design)
+[<img alt="Logo RPrado" src="https://avatars.githubusercontent.com/u/87092922" width="40" />](http://rprado.design)
