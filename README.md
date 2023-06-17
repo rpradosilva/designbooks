@@ -30,7 +30,7 @@ To optimizing and fast developing, the project use jekyll on github pages.
 
 ### Requeriments
 
-- Ruby lang installed - For more info visit: [This link](https://www.ruby-lang.org/en/downloads/)
+- Ruby lang installed. For more info visit: [This link](https://www.ruby-lang.org/en/downloads/)
 
 ### Install
 
