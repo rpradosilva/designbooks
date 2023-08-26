@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.5)
+    activesupport (>= 7.0.7.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -83,8 +83,8 @@ GEM
       public_suffix (>= 3.0, < 5.0)
       typhoeus (~> 1.3)
     html-pipeline (2.14.3)
-      activesupport (>= 2)
-      nokogiri (>= 1.4)
+      activesupport (>= 7.0.7.1)
+      nokogiri (>= 2.9.6)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -210,9 +210,9 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.18.1)
-    nokogiri (1.15.2-x64-mingw-ucrt)
+    nokogiri (>= 2.9.6-x64-mingw-ucrt)
       racc (~> 1.4)
-    nokogiri (1.15.2-x86_64-linux)
+    nokogiri (>= 2.9.6-x86_64-linux)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
@@ -262,7 +262,7 @@ DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
-  nokogiri (>= 1.13.5)
+  nokogiri (>= 2.9.6)
   tzinfo (~> 2.0)
   tzinfo-data
   wdm (~> 0.1.1)
